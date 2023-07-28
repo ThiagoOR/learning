@@ -15,16 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_28_164725) do
     t.string "artist"
     t.string "album"
     t.integer "year"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.text "description"
-  end
-
-  create_table "albuns", force: :cascade do |t|
-    t.string "Artist"
-    t.string "Album"
-    t.integer "Year"
-    t.text "Description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

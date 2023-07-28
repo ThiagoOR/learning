@@ -1,0 +1,26 @@
+<h1>List of albums </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Year</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <body>
+        <% @albums.each do |album| %>
+            <tr>
+                <th><%= album.artist %></th>
+                <th><%= album.album %></th>
+                <th><%= album.year %></th>
+                <th><%= album.description %></th>
+                <td>Placeholder</td>
+            </tr>
+        <% end %>
+    </body>
+
+</table>
